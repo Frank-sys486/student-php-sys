@@ -1,0 +1,17 @@
+how to make it work
+1. install xamp and turn on apache & mysql
+2. import database to localhost/phpmyadmin and dont check anything
+3. open database and goto privillege add user acount and 
+username: frank
+pass: LPUFrank@28
+hostname: localhost
+check all global privileges 
+then go
+4. move all the files to C:\xampp\htdocs\borromeo [create folder borromeo]
+5. then open localhost/borromeo
+charan that's your work!!
+
+if not working
+after doing all that step!
+open xamp turn off everything and on apache and mysql
+then access localhost/borromeo

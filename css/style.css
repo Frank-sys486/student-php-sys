@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Goldenbook;
+    
+}
+
+body {
+    background-color: #181a1b;
+}
+.nav {
+    background-color: #333;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;   /* Fixes the nav at the top */
+    top: 0;            /* Aligns the nav at the top of the viewport */
+    width: 100%;        /* Ensures the nav stretches across the full width of the viewport */
+    z-index: 1000;      /* Optional: ensures the nav stays on top of other content */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.nav ul li a:hover {
+    background-color: #555;
+}
+
+.s100rr {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../files/s1000rr.jpg);
+    background-repeat: repeat-y;    
+    
+    display: flex;       /* Enable Flexbox */
+    align-items: center; /* Center vertically */
+}
+
+.s100rr-overlay { 
+    width: 25%;         /* Width of the overlay */
+    height: 100vh;     /* Full height */
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    margin-left: auto;  /* Push overlay to the right */
+    display: flex;      /* Use Flexbox for centering content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+.s100rr-overlay p {
+    color: white;
+    font-size: 200%;
+    margin-bottom: 20%;  
+}
+
+.order-bttn {
+    display: inline-block;          /* Make it behave like a button */
+    padding: 10px 15px;            /* Add some padding */
+    border: 2px solid white;       /* White border */
+    /* border-radius: 5px;             Rounded corners */
+    background-color: transparent;  /* Transparent background */
+    color: rgb(82, 74, 74);                   /* White text color */
+    font-weight: bold;              /* Bold text */
+    text-align: center;             /* Center text */
+    cursor: pointer;                /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.order-bttn:hover {
+    color: black;
+    background-color: white; /* Slight background on hover */
+}
+
+.registration-form {
+    height: 100vh; /* Make sure the form takes the full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+.registration-form .container {
+    color: white;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center;    /* Centers items horizontally */
+    padding: 20px;          /* Optional: Padding inside the container */
+}
+
+
+.label-input-group {
+    display: flex;
+    align-items: center; /* Aligns label and input vertically */
+    width: 100%; /* Makes each textbox take full width */
+    max-width: 400px; /* Set a max width for uniformity */
+    margin-bottom: 1rem; /* Adds space between fields */
+}
+
+.label {
+    width: 150px; /* Fixed width for labels */
+    margin-right: 10px; /* Space between label and input */
+    text-align: right; /* Aligns text to the right */
+}
+
+/* Floating Error Box */
+.error {
+    background-color: #f44336; /* Red background for error */
+    color: white;              /* White text color */
+    padding: 20px;             /* Padding inside the box */
+    border-radius: 10px;       /* Rounded corners */
+    max-width: 400px;          /* Maximum width of the box */
+    margin: 0 auto;            /* Center the box horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: fixed;           /* Floating box */
+    top: 80px;                 /* Distance from the top */
+    left: 50%;                 /* Center the box horizontally */
+    transform: translateX(-50%); /* Offset to align the box center */
+    z-index: 1000;             /* Ensure it appears above other elements */
+    font-family: Arial, sans-serif; /* Clean font style */
+}
+
+.error strong {
+    display: block;            /* Make the strong message its own line */
+    margin-bottom: 10px;       /* Add space below the title */
+    font-size: 1.2rem;         /* Slightly larger font for the title */
+}
+
+.error ul {
+    list-style: none;          /* Remove default bullet points */
+    padding: 0;                /* Remove padding */
+}
+
+.error ul li {
+    margin-bottom: 5px;        /* Space between each error */
+    font-size: 1rem;           /* Normal font size for the list items */
+}
+
+
+.table table {
+    width: 80%; /* Adjust width of the table */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse; /* Merge borders */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #343a40; /* Dark background to match existing theme */
+    color: white; /* Text color */
+}
+
+.table th, .table td {
+    padding: 12px; /* Cell padding */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #495057; /* Border color for cells */
+}
+
+.table th {
+    background-color: #007bff; /* Bootstrap primary color for header */
+    color: white; /* White text for headers */
+}
+
+.table tr:nth-child(even) {
+    background-color: #495057; /* Darker gray for even rows */
+}
+
+.table tr:hover {
+    background-color: #6c757d; /* Lighten on hover for better visibility */
+}
+.table h2 {
+    text-align: center;
+    color: white
+}
